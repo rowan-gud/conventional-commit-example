@@ -1,0 +1,17 @@
+{
+  "name": "conventional-commit-example",
+  "version": "1.0.0",
+  "description": "## Description",
+  "main": "index.js",
+  "scripts": {
+    "release": "commit-and-tag-version",
+    "release:alpha": "npm run release -- --prerelease alpha",
+    "release:beta": "npm run release -- --prerelease beta",
+    "release:rc": "npm run release -- --prerelease rc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "commit-and-tag-version": "^12.4.1"
+  }
+}
