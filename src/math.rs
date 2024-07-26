@@ -40,6 +40,9 @@ pub fn multiply(a: i32, b: i32) -> i32 {
     a * b
 }
 
+enum MathERROR {
+    DivisionByZero,
+}
 /// Divides two numbers
 ///
 /// # Examples
@@ -50,6 +53,10 @@ pub fn multiply(a: i32, b: i32) -> i32 {
 /// let result = divide(6, 3);
 /// assert_eq!(result, 2);
 /// ```
-pub fn divide(a: i32, b: i32) -> i32 {
-    a / b
+pub fn divide(a: i32, b: i32) -> Result<i32, MathERROR> {
+    if b == 0 {
+        return Err(MathERROR::DivisionByZero);
+    }
+
+    Ok(a / b)
 }
