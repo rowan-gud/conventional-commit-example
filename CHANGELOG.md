@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.0](https://github.com/rowan-gud/conventional-commit-example/compare/v1.1.0...v2.0.0) (2024-07-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* divide function now returns result
+
+### Features
+
+* divide function now returns result ([3a21c91](https://github.com/rowan-gud/conventional-commit-example/commit/3a21c91d78437b15b2d03b2f6a33ae49da5488fd))
+
 ## [1.1.0](https://github.com/rowan-gud/conventional-commit-example/compare/v1.0.0...v1.1.0) (2024-07-26)
 
 
