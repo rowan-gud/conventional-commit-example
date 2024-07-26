@@ -17,6 +17,25 @@ pub fn sin(x: f64) -> f64 {
     x.sin()
 }
 
+/// Returns the arcsine of the point. The output angle is in radians.
+///
+/// # Examples
+///
+/// ```
+/// use conventional_commit_example::asin;
+///
+/// let x = 1.0;
+/// let err: f64 = 1e-6;
+///
+/// let actual = asin(x);
+/// let expected = std::f64::consts::PI / 2.0;
+///
+/// assert!((actual - expected).abs() < err);
+/// ```
+pub fn asin(x: f64) -> f64 {
+    x.asin()
+}
+
 /// Returns the cosine of the angle. The input angle is interpreted as radians.
 ///
 /// # Examples
@@ -34,6 +53,25 @@ pub fn sin(x: f64) -> f64 {
 /// ```
 pub fn cos(x: f64) -> f64 {
     x.cos()
+}
+
+///Returns the arccosine of the point. The output angle is in radians.
+///
+/// # Examples
+///
+/// ```
+/// use conventional_commit_example::acos;
+///
+/// let x = 0.0;
+/// let err: f64 = 1e-6;
+///
+/// let actual = acos(x);
+/// let expected = std::f64::consts::PI / 2.0;
+///
+/// assert!((actual - expected).abs() < err);
+/// ```
+pub fn acos(x: f64) -> f64 {
+    x.acos()
 }
 
 /// Returns the tangent of the angle. The input angle is interpreted as radians.
