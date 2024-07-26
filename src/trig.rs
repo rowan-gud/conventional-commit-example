@@ -53,5 +53,5 @@ pub fn cos(x: f64) -> f64 {
 /// ```
 ///
 pub fn tan(x: f64) -> f64 {
-    cos(x) / sin(x)
+    sin(x) / cos(x)
 }
